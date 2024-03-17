@@ -1,0 +1,9 @@
+def multiplication(product = 1) :
+    answer = True ;
+    while (answer == True) :
+        number = input("Do you want to multiplicate another value ? If yes, give the number. Else, write 'No'.") ;
+        if ((type(number) != float) and (type(number) != int)) :
+            answer = False ;
+        if (number != 'No') :
+            product = product * number ;
+    return product ;
