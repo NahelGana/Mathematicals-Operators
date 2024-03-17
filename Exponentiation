@@ -1,0 +1,13 @@
+from math import *
+
+def exponentiation(exponent = 2) :
+    answer = True ;
+    while (answer == True) :
+        number = input("Do you want to expone a new value ? If yes, give the number. Else, write 'No'.") ;
+        elif ((type(number) != float) and (type(number) != int)) :
+            answer = False;
+        else :
+            while ((exponent < 0) and (number % 1 != 0)) :
+                number = input("It's impossible to expone a negative exponent with a non-integer number. Give another number.") ;
+            exponent = exponent ** number ;
+    return exponent ;
