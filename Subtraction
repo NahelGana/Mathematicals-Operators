@@ -1,0 +1,9 @@
+def subtraction(difference = 0) :
+    answer = True ;
+    while (answer == True) :
+        number = input("Do you want to substract another value ? If yes, give the number. Else, write 'No'.") ;
+        if ((type(number) != float) and (type(number) != int)) :
+            reponse = False ;
+        else :
+            difference = difference - number  ;
+    return difference ;
