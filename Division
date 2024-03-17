@@ -1,0 +1,11 @@
+def division(quotient = 1) :
+    answer = True ;
+    while (answer == True) :
+        number = input("Do you want to divide another value ? If yes, give the number. Else, write 'No'.") ;
+        if ((type(number) != float) and (type(number) != int)) :
+            answer = False ;
+        else :
+            while (number == 0) :
+                number = float(input("Dividing by 0 is impossible. Give another number.")) ;
+            quotient = quotient / number ;
+    return quotient ;
