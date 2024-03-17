@@ -4,7 +4,6 @@ def summation(sum = 0) :
         number = input("Do you want to sum a new value ? If yes, give the number. Else, write 'No'.") ;
         if ((type(number) != float) and (type(number) != int)) :
             answer = False ;
-        elif (number != 'No') :
-            number = float(number) ;
+        else :
             sum = sum + number ;
     return sum ;
